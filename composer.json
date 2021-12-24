@@ -1,0 +1,26 @@
+{
+    "name": "magentohub/citydropdown",
+    "description": "A module that adds checkout city field to checkout quote shipping address",
+    "type": "magento2-module",
+    "version": "2.0.1",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Magentohub\\CityDropdown\\": ""
+        }
+    },
+    "license": "AL-2.0",
+    "authors": [
+        {
+            "name": "Magentohub Team",
+            "email": "magentohubosc@gmail.com",
+            "homepage": "https://magentohub.com/",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "magentohubosc@gmail.com"
+    }
+}

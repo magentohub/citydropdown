@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Magentohub_CityDropdown::citydropdown"
+             title="Magento Hub"
+             module="Magentohub_CityDropdown"
+             sortOrder="80"
+             resource="Magento_Backend::admin"/>
+
+        <add id="Magentohub_CityDropdown::romcity_list"
+             title="Manage City List"
+             module="Magentohub_CityDropdown"
+             sortOrder="10"
+             parent="Magentohub_CityDropdown::citydropdown"
+             action="manage_romcity/index"
+             resource="Magentohub_CityDropdown::citydropdown"/>
+
+        <add id="Magentohub_CityDropdown::region_list"
+             title="Manage Region List"
+             module="Magentohub_CityDropdown"
+             sortOrder="20"
+             parent="Magentohub_CityDropdown::citydropdown"
+             action="manage_romcity/index/region"
+             resource="Magentohub_CityDropdown::citydropdown"/>
+    </menu>
+</config>
